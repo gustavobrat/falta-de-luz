@@ -1,50 +1,108 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos do body */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
+/* Container principal */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Cabeçalho */
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+  background: #b4dd1e;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
 }
 
+header h1 {
+  font-size: 2rem;
+}
+
+/* Navegação */
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+  text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+  display: inline;
+  margin-right: 10px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  text-decoration: none;
+  color: #333;
 }
 
-main {
-    padding: 20px;
+nav ul li a:hover {
+  color: #b4dd1e;
 }
 
+/* Seções principais */
 section {
-    background: #fff;
-    margin: 15px 0;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centraliza o texto nas seções */
 }
 
+/* Estilo do iframe */
+iframe {
+  display: block; /* Para centralizar o iframe */
+  margin: 0 auto; /* Centraliza o iframe */
+}
+
+/* Rodapé */
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background: #b4dd1e;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* Estilo do botão */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #b4dd1e; /* Mantém a cor original */
+  background-color: #b4dd1e; /* Mantém a cor original */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #b4dd1e; /* Mantém a cor original */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
